@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Yaya</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-icon [color]= "isRecording ? 'danger' : 'primary'"></ion-icon>
+  <ion-button (click)="getPermission()"> Grant Permission </ion-button>
+  <ion-button (click)="listen()"> Start Listening </ion-button>
+</ion-content>
